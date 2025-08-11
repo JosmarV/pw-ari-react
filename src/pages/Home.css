@@ -1,0 +1,57 @@
+.home-section {
+    /* Gradiente de fondo del diseño */
+    background: linear-gradient(135deg, var(--purple-dark), var(--purple-medium-dark), var(--purple-accent));
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.works-elements {
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(150px, auto));
+    gap: var(--spacing-xs);
+}
+
+.work-item {
+    background-color: var(--purple-light);
+    border-radius: var(--border-radius-md);
+    padding: var(--padding-container-sm);
+    color: var(--text-color-light);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-item.item-1 {
+    grid-column: span 2;
+}
+
+/* ======================================= */
+/* RESPONSIVE DESIGN (PARA MÓVILES Y TABLETAS) */
+/* ======================================= */
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .main-subtitle {
+    font-size: 1.2rem; /* Reduce el tamaño del subtítulo en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .main-subtitle {
+    font-size: 1rem; /* Reduce aún más el tamaño del subtítulo en pantallas pequeñas */
+  }
+}

@@ -1,0 +1,100 @@
+/* ======================================= */
+/* 1. VARIABLES CSS            */
+/* ======================================= */
+
+:root {
+  /* --- Colores de la paleta morada --- */
+  --purple-dark: #0B0511;       /* El morado más oscuro, para fondos o menús */
+  --purple-medium-dark: #310C3F; /* Un tono intermedio */
+  --purple-medium: #501064;      /* Un morado vibrante */
+  --purple-light: #811B99;       /* Un morado más claro */
+  --purple-accent: #492BAF;      /* El morado azulado del diseño */
+
+  /* Colores para Glassmorphism */
+  --glass-background: rgba(255, 255, 255, 0.1);
+  --glass-background-light: rgba(255, 255, 255, 0.2);
+  --glass-border: rgba(255, 255, 255, 0.3);
+
+  /* --- Color del texto --- */
+  --text-color: #FFFFFF;        /* Texto blanco para los fondos oscuros */
+  --text-color-light: #F0F0F0;  /* Un blanco ligeramente más suave */
+  --text-color-dark: #000000;   /* Texto negro para los fondos claros */
+  --text-color-accent: #8c7fb6; /* Texto en el color de acento */
+
+  /* --- Tipografías --- */
+  /* Reemplaza estas con los nombres de las fuentes que vayas a usar.
+     Para la fuente script, te recomiendo usar Google Fonts como "Dancing Script" o "Great Vibes".
+     Para la sans-serif, "Montserrat" o "Roboto" son buenas opciones. */
+  --font-family-title: 'Dancing Script', cursive;
+  --font-family-body: 'Poppins', sans-serif;
+
+  /* --- Tamaños de fuente --- */
+  --font-size-small: 0.875rem; /* Tamaño pequeño para textos secundarios */
+  --font-size-base: 1rem;
+  --font-size-title: 5.5rem;    /* Tamaño para "Arianna Veliz" */
+  --font-size-subtitle: 1.5rem; /* Tamaño para "Diseñadora y Fotógrafa" */
+  --font-size-h2: 2.5rem; /* Tamaño para subtítulos de secciones */
+  --font-size-h3: 1.6rem; /* Tamaño para títulos de secciones menores */
+
+  /* --- Espaciado (Padding y Margen) --- */
+  --spacing-xxs: 0.25rem; /* 4px */
+  --spacing-xs: 0.5rem;   /* 8px */
+  --spacing-sm: 1rem;     /* 16px */
+  --spacing-md: 1.5rem;   /* 24px */
+  --spacing-lg: 2rem;     /* 32px */
+  --spacing-xl: 3rem;     /* 48px */
+  --spacing-xxl: 4rem;    /* 64px */
+
+  /* Variables específicas para padding */
+  --padding-container-sm: var(--spacing-sm);   /* Padding pequeño para contenedores */
+  --padding-container-md: var(--spacing-lg);   /* Padding medio para contenedores */
+  --padding-container-lg: var(--spacing-xl);   /* Padding grande para contenedores */
+
+  /* Padding responsivo para el cuerpo o contenedores principales */
+  --padding-page-horizontal: var(--spacing-lg); /* Padding horizontal por defecto */
+  --padding-page-vertical: var(--spacing-xl);   /* Padding vertical por defecto */
+
+  --border-radius-sm: 0.5rem;   /* 8px - Pequeño, para botones o cards sutiles */
+  --border-radius-md: 1rem;     /* 16px - Mediano, para la mayoría de los contenedores */
+  --border-radius-lg: 1.5rem;   /* 24px - Grande, para elementos más prominentes o secciones */
+  --border-radius-xl: 2rem;     /* 32px - Extra grande, para un efecto más suave */
+  --border-radius-circle: 50%;  /* Para hacer elementos perfectamente circulares (ej. avatares) */
+
+}
+
+/* ======================================= */
+/* 2. ESTILOS BASE            */
+/* ======================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-body);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-body);
+  color: var(--text-color);
+}
+
+/* ======================================= */
+/* 3. ESTILOS ESPECÍFICOS PARA EL DISEÑO */
+/* ======================================= */
+
+.main-title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-title);
+  color: var(--text-color);
+  /* Posicionamiento y otros estilos irían aquí */
+}
+
+.main-subtitle {
+  font-size: var(--font-size-subtitle);
+  color: var(--text-color-light);
+  font-weight: 300; /* Para que se vea más delgada como en el diseño */
+  /* Posicionamiento y otros estilos */
+}
