@@ -1,23 +1,19 @@
 import React from 'react';
 import './AboutMe.css'
-import photoshopIcon from '../assets/photoshop.png';
-import illustratorIcon from '../assets/illustrator.png';
-import canvaIcon from '../assets/canva.png';
-import lightroomIcon from '../assets/lightroom.png';
+import { SKILL_ICONS } from '../utils/image.paths.js';
 
-function AboutMe({ title, paragraph}) {
+function AboutMe({ title }) {
     const skills = [
-       {url: photoshopIcon, alt: 'Photoshop'},
-       {url: illustratorIcon, alt: 'Illustrator'},
-       {url: canvaIcon, alt: 'Canva'},
-       {url: lightroomIcon, alt: 'Lightroom'}
+       {url: SKILL_ICONS.photoshop, alt: 'Photoshop'},
+       {url: SKILL_ICONS.illustrator, alt: 'Illustrator'},
+       {url: SKILL_ICONS.canva, alt: 'Canva'},
+       {url: SKILL_ICONS.lightroom, alt: 'Lightroom'}
     ];
 
     return (
-        <div className="content-about-me">
+        <div id='about' className="content-about-me">
             <h2>{title}</h2>
-            <p>{paragraph}</p>
-            <div className="about-me-content">
+            <div className="about-me-content fadeUp">
                 <div className='about-me-photo'>
                     <img src="https://i.pinimg.com/736x/b8/85/9f/b8859fb474e7573792d71f367faf53eb.jpg" alt="Arianna" />
                 </div>

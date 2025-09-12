@@ -1,13 +1,20 @@
 .content-section {
     /* Gradiente de fondo del diseño */
-    background: var(--purple-dark);
     min-height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
+}
+
+.bg-color-dark {
+    background: var(--purple-dark);
+}
+
+.bg-color-medium-dark {
+    background: var(--purple-medium-dark);
 }
 
 .content-section h2 {
@@ -44,14 +51,61 @@
     transition: transform 0.3s ease; /* Transición suave para el efecto hover */
 }
 
-@media (max-width: 768px) {
-    .projects-container {
-        column-count: 2; /* Dos columnas en pantallas medianas */
+.projects-container img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+.autoShow {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 100vh;
+}
+
+@keyframes text-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@media (max-width: 480px) {
-    .projects-container {
-        column-count: 1; /* Una columna en pantallas pequeñas */
+.imageReveal {
+    animation: imageReveal both;
+    animation-timeline: view(80% 10%);
+}
+
+@keyframes imageReveal {
+    from {
+        filter: saturate(0) contrast(4) brightness(.1) blur(2px);
+        opacity: 0;
+        scale: .95;
+        translate: 0 2rem;
+    }
+    to {
+        filter: none;
+        opacity: 1;
+        scale: 1;
+        translate: 0 0;
     }
 }
+
+@media (max-width: 768px) {
+    .projects-container {
+        column-count: 2; /* Dos columnas en pantallas medianas */
+        column-gap: var(--spacing-xs);
+        row-gap: var(--spacing-xs);
+        
+    }
+}
+/*
+@media (max-width: 480px) {
+    .projects-container {
+        column-count: 1;  // Una columna en pantallas pequeñas 
+    }
+}
+*/

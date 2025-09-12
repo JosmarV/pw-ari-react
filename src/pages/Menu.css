@@ -1,10 +1,11 @@
 .menu-section {
-    background: linear-gradient(135deg, rgba(176, 22, 207, 0.1), rgba(130, 47, 141, 0.2));
+    background: linear-gradient(135deg, rgba(149, 19, 175, 0.5), rgba(80, 28, 87, 0.5));
     position: fixed;
     top: var(--spacing-md) ;
     left: var(--spacing-md);
     padding: var(--padding-container-sm);
     border-radius: var(--border-radius-sm);
+    z-index: 1;
 }
 
 .menu-section ul {
@@ -58,11 +59,29 @@
     color: var(--purple-light);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .menu-section {
-        top: var(--spacing-xs);
-        left: var(--spacing-xs);
-        padding: var(--spacing-xs);
-        font-size: var(--font-size-small);
+        left: 0;
+        right: 0;
+        margin: 0 var(--spacing-lg);
+        width: calc(100% - var(--spacing-lg) * 2);
+    }
+    
+    .menu-section ul {
+        display: flex;
+        flex: 1 0 0px;
+        flex-direction: row;
+        gap: unset;
+        justify-content: space-between;
+    }
+    .menu-section ul li:hover::after {
+        display: none;
+        content: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .showLabel {
+        display: none;
     }
 }

@@ -1,0 +1,117 @@
+.two-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--spacing-lg);
+    gap: var(--spacing-xxl);
+}
+
+.contact-form {
+    flex: 1;
+    margin-right: var(--spacing-md);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(135deg, rgba(149, 19, 175, 0.5), rgba(80, 28, 87, 0.5));
+    padding: var(--padding-container-md);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    width: 300px;
+    background-color: var(--purple-dark);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--purple-light);
+}
+
+.contact-form form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form form button {
+    padding: 10px;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    background-color: var(--purple-light);
+    color: white;
+    cursor: pointer;
+}
+
+.social-media-and-info {
+    flex: 1;
+}
+
+.social-media-and-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media-and-info h3 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.social-media-and-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+    font-size: 16px;
+}
+
+.social-media-and-info img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.social-media-and-info a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media-and-info a:hover {
+    text-decoration: underline;
+    color: var(--purple-light);
+
+}
+
+@media (max-width: 768px) {
+    #contact p {
+        text-align: center;
+    }
+
+    .two-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        margin-right: 0;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+       width: 260px;
+    }
+
+    .social-media-and-info {
+        margin-bottom: var(--spacing-lg);
+    }
+}

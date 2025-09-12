@@ -3,7 +3,7 @@ import './Home.css'
 function Home() {
     return (
         // La sección principal de la página de inicio
-        <section className="home-section">
+        <section id='home' className="home-section">
             <div className="home-content">
                 <h1 className="main-title">Arianna Veliz</h1>
                 <p className="main-subtitle">Diseñadora y Fotógrafa</p>

@@ -118,9 +118,9 @@
     min-width: 160px;
 }
 
-.about-me-description p,
-.about-me-education p,
-.about-me-experience p {
+.about-me-description p:not(:last-child),
+.about-me-education p:not(:last-child),
+.about-me-experience p:not(:last-child) {
     margin-bottom: var(--spacing-md);
     line-height: 1.5;
     color: var(--text-color-light);
@@ -131,8 +131,8 @@
 .about-me-experience p span {
     display: block;
     font-weight: 500;
-    margin-top: var(--spacing-xs);
-    color: var(--text-color-accent);
+    margin-top: var(--spacing-xxs);
+    color: var(--text-color-subs);
 }
 
 .about-me-skills ul {

@@ -20,6 +20,7 @@
   --text-color-light: #F0F0F0;  /* Un blanco ligeramente más suave */
   --text-color-dark: #000000;   /* Texto negro para los fondos claros */
   --text-color-accent: #8c7fb6; /* Texto en el color de acento */
+  --text-color-subs: #bba4c5; /* Texto en un tono más oscuro */
 
   /* --- Tipografías --- */
   /* Reemplaza estas con los nombres de las fuentes que vayas a usar.
@@ -69,6 +70,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Para un desplazamiento suave al hacer clic en enlaces ancla */
 }
 
 body {
