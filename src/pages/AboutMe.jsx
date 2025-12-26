@@ -15,7 +15,7 @@ function AboutMe({ title }) {
             <h2>{title}</h2>
             <div className="about-me-content fadeUp">
                 <div className='about-me-photo'>
-                    <img src="https://i.pinimg.com/736x/b8/85/9f/b8859fb474e7573792d71f367faf53eb.jpg" alt="Arianna" />
+                    <img src="../../public/images/arianna.jpg" alt="Arianna" />
                 </div>
                 <div className='about-me-description'>
                     <p>Mi nombre es Arianna, soy una diseñadora gráfica apasionada por crear visuales que cuenten historias y transmitan mensajes poderosos.</p>

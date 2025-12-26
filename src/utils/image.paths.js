@@ -23,14 +23,20 @@ export const SOCIAL_MEDIA_ICONS = {
 // Array de imágenes para la sección de diseños
 // No es necesario cambiar mucho aquí si las URLs son externas
 export const DESIGN_SECTION = [
-  { url: 'https://i.pinimg.com/736x/97/f2/ad/97f2ad33c8a7c89c435c955aeb16b5cb.jpg', alt: 'flyer biblia' },
-  { url: 'https://i.pinimg.com/1200x/7c/82/9f/7c829f9bef88bbf26352142634d2fe09.jpg', alt: 'imagen de tipografía' },
-  { url: 'https://i.pinimg.com/736x/48/86/17/488617e9953afd1b97a9e06a4bcc4e7d.jpg', alt: 'diseño de portada' },
-  { url: 'https://i.pinimg.com/1200x/a8/57/f5/a857f568a80087f60c21ec36ce4d7c93.jpg', alt: 'diseño de logo' },
-  { url: 'https://i.pinimg.com/736x/97/f2/ad/97f2ad33c8a7c89c435c955aeb16b5cb.jpg', alt: 'flyer biblia' },
-  { url: 'https://i.pinimg.com/1200x/7c/82/9f/7c829f9bef88bbf26352142634d2fe09.jpg', alt: 'imagen de tipografía' },
-  { url: 'https://i.pinimg.com/736x/48/86/17/488617e9953afd1b97a9e06a4bcc4e7d.jpg', alt: 'diseño de portada' },
-  { url: 'https://i.pinimg.com/1200x/a8/57/f5/a857f568a80087f60c21ec36ce4d7c93.jpg', alt: 'diseño de logo' },
+  { url: './images/work_design/design1.jpg', nameFolder: 'work_design1', alt: 'Catgurt' },
+  { url: './images/work_design/design2.jpg', nameFolder: 'work_design2', alt: 'Diseño 2' },
+  { url: './images/work_design/design3.jpg', nameFolder: 'work_design3', alt: 'Diseño 3' },
+  { url: './images/work_design/design4.jpg', nameFolder: 'work_design4', alt: 'Veneimagen' },
+  { url: './images/work_design/design5.jpg', nameFolder: 'work_design5', alt: 'Diseño 5' },
+  { url: './images/work_design/design6.jpg', nameFolder: 'work_design6', alt: 'Diseño 6' },
+  { url: './images/work_design/design7.jpg', nameFolder: 'work_design7', alt: 'Diseño 7' },
+  { url: './images/work_design/design8.gif', nameFolder: 'work_design8', alt: 'Diseño 8' },
+  { url: './images/work_design/design9.jpg', nameFolder: 'work_design9', alt: 'Diseño 9' },
+  { url: './images/work_design/design10.gif', nameFolder: 'work_design10', alt: 'Diseño 10' },
+  { url: './images/work_design/design11.jpg', nameFolder: 'work_design11', alt: 'Diseño 11' }, 
+  { url: './images/work_design/design12.jpg', nameFolder: 'work_design12', alt: 'Diseño 12' },
+  { url: './images/work_design/design13.jpg', nameFolder: 'work_design13', alt: 'Diseño 13' },
+  { url: './images/work_design/design14.jpg', nameFolder: 'work_design14', alt: 'Diseño 14' }
 ];
 
 // Array de imágenes para la sección de fotografía

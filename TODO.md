@@ -1,7 +1,7 @@
 # TODO
 
 - ✅ Terminar menu, que este medio transparente cuando no se esta encima de el y que se oculte en Hamburger menu cuando este en la resolución de móvil.
-- [ ] Arreglar vista movil del menu.
+- ✅ Arreglar vista movil del menu.
 - [ ] Reemplazar imágenes de muestra por las reales
 - [ ] mejorar portada.  
 - [ ] Pulir detalles en cada sección.
