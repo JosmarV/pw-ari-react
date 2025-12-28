@@ -24,7 +24,7 @@ export const SOCIAL_MEDIA_ICONS = {
 // No es necesario cambiar mucho aquí si las URLs son externas
 export const DESIGN_SECTION = [
   { url: './images/work_design/design1.jpg', nameFolder: 'work_design1', alt: 'Catgurt' },
-  { url: './images/work_design/design2.jpg', nameFolder: 'work_design2', alt: 'Diseño 2' },
+  // { url: './images/work_design/design2.jpg', nameFolder: 'work_design2', alt: 'Diseño 2' },
   { url: './images/work_design/design3.jpg', nameFolder: 'work_design3', alt: 'Diseño 3' },
   { url: './images/work_design/design4.jpg', nameFolder: 'work_design4', alt: 'Veneimagen' },
   { url: './images/work_design/design5.jpg', nameFolder: 'work_design5', alt: 'Diseño 5' },

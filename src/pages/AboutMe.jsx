@@ -11,7 +11,7 @@ function AboutMe({ title }) {
     ];
 
     return (
-        <div id='about' className="content-about-me">
+        <div id='aboutme' className="content-about-me">
             <h2>{title}</h2>
             <div className="about-me-content fadeUp">
                 <div className='about-me-photo'>

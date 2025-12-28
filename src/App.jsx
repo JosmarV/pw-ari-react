@@ -5,6 +5,7 @@ import Menu from './pages/Menu'
 import Sections from './pages/Sections'
 import AboutMe from './pages/AboutMe'
 import Contact from './pages/Contact'
+import { useActiveSection } from './hooks/useActiveSection'
 // Importa el componente Modal
 import Modal from './components/Modal'
 
@@ -26,6 +27,7 @@ library.add(faHome, faCameraRetro, faPalette, faGlasses, faPhone, faInstagram);
 function App() {
   const [openedModal, setOpenedModal] = useState(false);
   const [selectedProjects, setSelectedProjects] = useState([]);
+  const activeSection = useActiveSection(['home', 'design', 'photography', 'aboutme', 'contact']);
 
   // Esta función se pasa al componente Sections
   const handleImageClick = (project) => {
@@ -42,8 +44,8 @@ function App() {
 
   return (
     <div className='main-container'>
-      <Home></Home>
-      <Menu></Menu>
+      <Home id="home"></Home>
+      <Menu activeId={activeSection}></Menu>
       <Sections 
         id="design" 
         title="Diseño Gráfico" 
@@ -58,8 +60,11 @@ function App() {
         projects={PHOTOGRAPHY_SECTION} 
         onImageClick={handleImageClick} 
       />
-      <AboutMe title="Sobre mí"/>
-      <Contact></Contact>
+      <AboutMe 
+        id="aboutme" 
+        title="Sobre mí"
+      />
+      <Contact id="contact"></Contact>
 
       {/* Aquí se renderiza el modal si 'openedModal' es true */}
       {openedModal && (

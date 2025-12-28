@@ -1,12 +1,12 @@
 import './Menu.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function Menu() {
+function Menu({ activeId }) {
     const menuItems = [
         { href: "#home", icon: "fa-solid fa-house", label: "Inicio" },
         { href: "#design", icon: "fa-solid fa-palette", label: "Diseño" },
         { href: "#photography", icon: "fa-solid fa-camera-retro", label: "Fotografía" },
-        { href: "#about", icon: "fa-solid fa-glasses", label: "Sobre mi" },
+        { href: "#aboutme", icon: "fa-solid fa-glasses", label: "Sobre mi" },
         { href: "#contact", icon: "fa-solid fa-phone", label: "Contácteme" },
     ];
 
@@ -14,7 +14,7 @@ function Menu() {
         <nav className="menu-section">
             <ul>
                 {menuItems.map(({ href, icon, label }) => (
-                    <li key={label}>
+                    <li key={label} className={activeId === href.slice(1) ? 'active' : ''}>
                         <a href={href}>
                             <FontAwesomeIcon icon={icon}/>
                             <span className="showLabel">{label}</span>

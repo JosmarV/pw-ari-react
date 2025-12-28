@@ -18,23 +18,30 @@
     gap: 8px;
     padding: var(--spacing-xxs);
     padding-right: var(--spacing-lg);
-}
-
-.menu-section ul li:hover {
     position: relative;
 }
 
-.menu-section ul li:hover::after {
+.menu-section ul li::after {
     content: "";
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-50%) scaleY(0);
+    transform: translateY(-50%) scaleY(0); /* Escondido por defecto */
     width: 4px;
     height: 80%;
     background: var(--purple-light);
     border-radius: 2px;
-    animation: bar-expand 0.3s forwards;
+    transition: transform 0.3s ease; /* Transición suave en lugar de keyframes */
+    transform-origin: center;
+}
+
+.menu-section ul li.active::after,
+.menu-section ul li:hover::after {
+    transform: translateY(-50%) scaleY(1);
+}
+
+.menu-section ul li.active a {
+    color: var(--purple-light);
 }
 
 @keyframes bar-expand {
@@ -74,9 +81,9 @@
         gap: unset;
         justify-content: space-between;
     }
+    .menu-section ul li.active::after,
     .menu-section ul li:hover::after {
-        display: none;
-        content: none;
+        display: none; /* Evitamos que la línea vertical rompa el diseño horizontal */
     }
 }
 
