@@ -20,11 +20,12 @@ export const SOCIAL_MEDIA_ICONS = {
   facebook: facebookIcon,
 };
 
+export const ABOUT_ME_PHOTO = './images/arianna.jpg';
+
 // Array de imágenes para la sección de diseños
 // No es necesario cambiar mucho aquí si las URLs son externas
 export const DESIGN_SECTION = [
   { url: './images/work_design/design1.jpg', nameFolder: 'work_design1', alt: 'Catgurt' },
-  // { url: './images/work_design/design2.jpg', nameFolder: 'work_design2', alt: 'Diseño 2' },
   { url: './images/work_design/design3.jpg', nameFolder: 'work_design3', alt: 'Diseño 3' },
   { url: './images/work_design/design4.jpg', nameFolder: 'work_design4', alt: 'Veneimagen' },
   { url: './images/work_design/design5.jpg', nameFolder: 'work_design5', alt: 'Diseño 5' },
@@ -41,14 +42,14 @@ export const DESIGN_SECTION = [
 
 // Array de imágenes para la sección de fotografía
 export const PHOTOGRAPHY_SECTION = [
-  { url: './images/photo1.jpg', alt: 'Yogurt', nameFolder: 'photo_session1', description: 'Fotografía de un delicioso yogurt con frutas frescas y granola, capturando la frescura y textura del alimento.' },
-  { url: './images/photo2.jpg', alt: 'Pastel de cumpleaños', nameFolder: 'photo_session2' },
-  { url: './images/photo3.jpg', alt: 'Fotografía 3', nameFolder: 'photo_session3' },
-  { url: './images/photo4.jpg', alt: 'Fotografía 4', nameFolder: 'photo_session4' },
-  { url: './images/photo5.jpg', alt: 'Fotografía 5', nameFolder: 'photo_session5' },
-  { url: './images/photo6.jpg', alt: 'Fotografía 6', nameFolder: 'photo_session6' },
-  { url: './images/photo7.jpg', alt: 'Fotografía 7', nameFolder: 'photo_session7' },
-  { url: './images/photo8.jpg', alt: 'Fotografía 8', nameFolder: 'photo_session8' },
-  { url: './images/photo9.jpg', alt: 'Fotografía 9', nameFolder: 'photo_session9' },
-  { url: './images/photo10.jpg', alt: 'Fotografía 10', nameFolder: 'photo_session10' }
+  { url: './images/photos/photo1.jpg', alt: 'Yogurt', nameFolder: 'photo_session1', description: 'Fotografía de un delicioso yogurt con frutas frescas y granola, capturando la frescura y textura del alimento.' },
+  { url: './images/photos/photo2.jpg', alt: 'Pastel de cumpleaños', nameFolder: 'photo_session2' },
+  { url: './images/photos/photo3.jpg', alt: 'Fotografía 3', nameFolder: 'photo_session3' },
+  { url: './images/photos/photo4.jpg', alt: 'Fotografía 4', nameFolder: 'photo_session4' },
+  { url: './images/photos/photo5.jpg', alt: 'Fotografía 5', nameFolder: 'photo_session5' },
+  { url: './images/photos/photo6.jpg', alt: 'Fotografía 6', nameFolder: 'photo_session6' },
+  { url: './images/photos/photo7.jpg', alt: 'Fotografía 7', nameFolder: 'photo_session7' },
+  { url: './images/photos/photo8.jpg', alt: 'Fotografía 8', nameFolder: 'photo_session8' },
+  { url: './images/photos/photo9.jpg', alt: 'Fotografía 9', nameFolder: 'photo_session9' },
+  { url: './images/photos/photo10.jpg', alt: 'Fotografía 10', nameFolder: 'photo_session10' }
 ];

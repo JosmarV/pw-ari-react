@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutMe.css'
 import { SKILL_ICONS } from '../utils/image.paths.js';
+import { ABOUT_ME_PHOTO } from '../utils/image.paths.js';
 
 function AboutMe({ title }) {
     const skills = [
@@ -15,7 +16,7 @@ function AboutMe({ title }) {
             <h2>{title}</h2>
             <div className="about-me-content fadeUp">
                 <div className='about-me-photo'>
-                    <img src="../../public/images/arianna.jpg" alt="Arianna" />
+                    <img src={ABOUT_ME_PHOTO} alt="Arianna" />
                 </div>
                 <div className='about-me-description'>
                     <p>Mi nombre es Arianna, soy una diseñadora gráfica apasionada por crear visuales que cuenten historias y transmitan mensajes poderosos.</p>
